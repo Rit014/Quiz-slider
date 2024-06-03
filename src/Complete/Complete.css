@@ -1,0 +1,54 @@
+.dash-board .complete{
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.dash-board .complete .play-button{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: yellow;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 10px 13px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.dash-board .complete .play-button p{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.dash-board .complete i{
+    font-size: 29px;
+    cursor: pointer;
+    color: black;
+}
+
+.dash-board .complete .play-button i:hover{
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(-360deg)
+    }
+    to {
+         transform: rotate(360deg)
+    }
+}

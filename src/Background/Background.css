@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-img{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+#background{
+    width: 100%;
+    height: 100vh;
+    animation-name: imagezoom;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes imagezoom{
+    0%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+
+/* Content */
+.content{
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+   top: 0;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .inner-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 20px;
+}
+
+.nav #logo{
+    border-radius: 50%;
+}
+
+.nav .logo-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4px;
+    font-size: 9px;
+}
+
+
+.nav .volumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+/* dash Board */
+
+.dash-board{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    font-size: 12px;
+    justify-contetn: start;
+    color: #fff;
+}
+
+

@@ -1,0 +1,64 @@
+.dash-board .inner-content{
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dash-board .inner-content h1{
+    font-size: 52px;
+    line-height: 1.3;
+}
+
+.dash-board .inner-content p{
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.dash-board .inner-content .play-button{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: yellow;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 10px 13px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.dash-board .inner-content .play-button p{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.dash-board .inner-content i{
+    font-size: 29px;
+    cursor: pointer;
+    color: black;
+}
+
+.dash-board .inner-content .play-button i:hover{
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(-360deg)
+    }
+    to {
+         transform: rotate(360deg)
+    }
+}

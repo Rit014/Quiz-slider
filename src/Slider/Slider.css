@@ -1,0 +1,90 @@
+.dash-board .slider{
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.dash-board .slider .numbering{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.dash-board .slider .numbering .white-dot{
+    color: white;
+}
+
+.dash-board .slider .numbering .gray-dot{
+    color: gray;
+}
+.dash-board .slider .moves{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+
+.slider .moves .slides{
+    width: 65%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.moves .slides img{
+    width: 100%;
+    height: 100%;
+}
+
+/* .moves .rotate{
+    transition: rotate 1s ease-in-out;
+}
+
+.moves .rotate:hover{
+    rotate: y 90deg;
+} */
+
+.dash-board .slider .moves .moveBackward{
+    background: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+}
+.dash-board .slider .moves .moveBackward:hover{
+    background: yellow;
+}
+
+.dash-board .slider .moves .moveForward{
+    background: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+}
+
